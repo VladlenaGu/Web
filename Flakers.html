@@ -46,23 +46,24 @@
 			</div>
 			<div class ="menu">
 			<a name="menu"/>
-				<div class="wrap wrap-">
+				<div class="wrap wrap- m">
 					<div class="menuh2"><h2>Меню</h2></div>
-					<div class="menugal"></div>
+					<div id ="menugal" class="menugal"></div>
 					<div class="menutext p small"><a href="9.pdf" download="">Скачать меню</a></div>
 				</div>
 				<div class="menuwrapbut p normal">
-					<button onclick="myFunction()" class="but p">Сделай сам</button>
-					<div class="mp"></div>
-					<button onclick="myFunction()" class="but p">Flakers-bowl</button>
-					<div class="mp"></div>
-					<button onclick="myFunction()" class="but p">Чай и кофе</button>
-					<div class="mp"></div>
-					<button onclick="myFunction()" class="but p">Коктейли</button>
-					<div class="mp"></div>
-					<button onclick="myFunction()" class="but p">Мороженое</button>
-					<div class="mp"></div>
-					<p id="demo"></p>
+					<button class="but p" onclick="document.getElementById('menugal').innerHTML = 'Сам';" >Сделай сам</button> 
+					<div class="mp"></div> 
+					<button onclick="document.getElementById('menugal').innerHTML = 'flakers';" class="but p">Flakers-bowl</button> 
+					<div class="mp"></div> 
+					<button onclick="document.getElementById('menugal').innerHTML = 'ЧАААЙ';" class="but p">Чай и кофе</button> 
+					<div class="mp"></div> 
+					<button onclick="document.getElementById('menugal').innerHTML = 'Коктейли';" class="but p">Коктейли</button> 
+					<div class="mp"></div> 
+					<button onclick="document.getElementById('menugal').innerHTML = 'Мороженое';" class="but p">Мороженое</button> 
+					<div class="mp"></div> 
+					
+					
 				</div>
 			</div>
 			<div class ="vmeste">
@@ -191,7 +192,7 @@
 		</script>
 		<script>
 		  function myFunction() {
-			document.getElementById("demo").innerHTML = "Hello Dear Visitor!";
+			document.getElementById("flakers").innerHTML = "Hello Dear Visitor!";
 		  }
 		</script>
 	</body>
