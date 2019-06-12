@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript">
+		window.onload = function(){
+			document.getElementById('a').onclick = function(){
+				var div = document.getElementById('div');
+				div.style.display = (div.style.display == '') ? 'block' : '';
+				return false;
+			};
+		};
+	</script>
+
+<style type="text/css">
+ div {background: red; display: none; width: 100px; height: 50px;}
+</style>
+<div></div>
+<button id="a">click</a></button> 
+<div id="div"></div>
+</html>
