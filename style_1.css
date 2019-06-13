@@ -209,20 +209,27 @@ h1{
 	position: relative;
 	z-index:5;
 } 
-.flakers{
+.mss{
 	height: 50vw;
 	width: 30vw;
 	background-color:red;
+}
+.hidden{
 	display: none;
 }
 .menuh2{
-	margin-left:20vw;
+	margin-left: 20vw;
+    margin-top: -18vw;
 }
 .menugal{
 	margin: -2vw 0 -2vw 2vw;
     width: 90%;
     background-color: blue;
     height: 55%;
+}
+.menugal_btn{
+	margin-top: 15vw;
+    margin-left: 20vw;
 }
 .menutext{
 	display: none;

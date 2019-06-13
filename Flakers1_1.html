@@ -47,23 +47,41 @@
 			<div class ="menu">
 			<a name="menu"/>
 				<div class="wrap wrap- m">
-					<div class="menuh2"><h2>Меню</h2></div>
-					<div id ="menugal" class="menugal"></div>
+					<button id="menugal_btn" class="menugal_btn">Cl</button>
+					<div class="menuh2">
+						<h2>Меню</h2>
+					</div>
+					<div id ="menugal" class="visible">
+						<div class="menugal"></div>
+					</div>
+					<div id ="mss" class="hidden">
+						<div class="mss"></div>
+					</div>
+					<div id ="mfbt" class="hidden">
+						<div class="mss"></div>
+					</div>
+					<div id ="mtee" class="hidden">
+						<div class="mss"></div>
+					</div>
+					<div id ="mcoct" class="hidden">
+						<div class="mss"></div>
+					</div>
+					<div id ="mice" class="hidden">
+						<div class="mss"></div>
+					</div>
 					<div class="menutext p small"><a href="9.pdf" download="">Скачать меню</a></div>
 				</div>
 				<div class="menuwrapbut p normal">
-					<button class="but p">Сделай сам</button> 
+					<button class="but p" id="mss_btn">Сделай сам</button> 
 					<div class="mp"></div> 
-					<button onclick="document.getElementById('menugal').innerHTML = 'flakers';" class="but p">Flakers-bowl</button> 
+					<button id="mfbt_btn" class="but p">Flakers-bowl</button> 
 					<div class="mp"></div> 
-					<button onclick="document.getElementById('menugal').innerHTML = 'ЧАААЙ';" class="but p">Чай и кофе</button> 
+					<button id="mtee_btn" class="but p">Чай и кофе</button> 
 					<div class="mp"></div> 
-					<button onclick="document.getElementById('menugal').innerHTML = 'Коктейли';" class="but p">Коктейли</button> 
+					<button id="mcoct_btn" class="but p">Коктейли</button> 
 					<div class="mp"></div> 
-					<button onclick="document.getElementById('menugal').innerHTML = 'Мороженое';" class="but p">Мороженое</button> 
+					<button id="mice_btn" class="but p">Мороженое</button> 
 					<div class="mp"></div> 
-					<div class='flakers' id='flakers'></div>
-					
 				</div>
 			</div>
 			<div class ="vmeste">
@@ -163,14 +181,75 @@
 	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript">
-		window.onload = function(){
-			document.getElementById('menugal').onclick = function(){
-				var div = document.getElementById('flakers');
-				div.style.display = (div.style.display == '') ? 'block' : '';
-				return false;
+
+			var galDiv = document.getElementById('menugal');
+			var samDiv = document.getElementById('mss');
+			var fbtDiv = document.getElementById('mfbt');
+			var teeDiv = document.getElementById('mtee');
+			var coctDiv = document.getElementById('mcoct');
+			var miceDiv = document.getElementById('mice');
+
+			var galBtn = document.getElementById('menugal_btn');
+			var samBtn = document.getElementById('mss_btn');
+			var fbtBtn = document.getElementById('mfbt_btn');
+			var teeBtn = document.getElementById('mtee_btn');
+			var coctBtn = document.getElementById('mcoct_btn');
+			var miceBtn = document.getElementById('mice_btn');
+
+			galBtn.onclick = function() {
+				samDiv.setAttribute('class', 'hidden');
+				fbtDiv.setAttribute('class', 'hidden');
+				teeDiv.setAttribute('class', 'hidden');
+				coctDiv.setAttribute('class', 'hidden');
+				miceDiv.setAttribute('class', 'hidden');
+				galDiv.setAttribute('class', 'visible');
 			};
-		};
-	</script>
+
+			samBtn.onclick = function() {
+				galDiv.setAttribute('class', 'hidden');
+				fbtDiv.setAttribute('class', 'hidden');
+				teeDiv.setAttribute('class', 'hidden');
+				coctDiv.setAttribute('class', 'hidden');
+				miceDiv.setAttribute('class', 'hidden');
+				samDiv.setAttribute('class', 'visible');
+			};
+
+			fbtBtn.onclick = function() {
+				samDiv.setAttribute('class', 'hidden');
+				galDiv.setAttribute('class', 'hidden');
+				teeDiv.setAttribute('class', 'hidden');
+				coctDiv.setAttribute('class', 'hidden');
+				miceDiv.setAttribute('class', 'hidden');
+				fbtDiv.setAttribute('class', 'visible');
+			};
+			
+			teeBtn.onclick = function() {
+				samDiv.setAttribute('class', 'hidden');
+				fbtDiv.setAttribute('class', 'hidden');
+				galDiv.setAttribute('class', 'hidden');
+				coctDiv.setAttribute('class', 'hidden');
+				miceDiv.setAttribute('class', 'hidden');
+				teeDiv.setAttribute('class', 'visible');
+			};
+			
+			coctBtn.onclick = function() {
+				samDiv.setAttribute('class', 'hidden');
+				fbtDiv.setAttribute('class', 'hidden');
+				teeDiv.setAttribute('class', 'hidden');
+				galDiv.setAttribute('class', 'hidden');
+				miceDiv.setAttribute('class', 'hidden');
+				coctDiv.setAttribute('class', 'visible');
+			};
+			
+			miceBtn.onclick = function() {
+				samDiv.setAttribute('class', 'hidden');
+				fbtDiv.setAttribute('class', 'hidden');
+				teeDiv.setAttribute('class', 'hidden');
+				coctDiv.setAttribute('class', 'hidden');
+				galDiv.setAttribute('class', 'hidden');
+				miceDiv.setAttribute('class', 'visible');
+			};
+		</script>
 		<script>
 		function scrollToAnchor(aid){
 			var aTag = $("a[name='"+ aid +"']");
