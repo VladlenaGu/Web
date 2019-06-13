@@ -59,10 +59,10 @@ a{
 	color: white;
 }
 .top{
-	background-color: #a82f3abf;
+	background-color: #ba3447c4;
     border-radius: 4vw;
-    height: 8vw;
-    width: 8vw;
+    height: 5vw;
+    width: 5vw;
     position: fixed;
     bottom: 2vw;
     left: 90vw;
@@ -70,8 +70,8 @@ a{
     cursor: pointer;
     background-image: url(strelka.png);
     background-size: 130%;
-    background-position-x: -1.1vw;
-    background-position-y: -0.2vw;
+    background-position-x: -0.7vw;
+    background-position-y: -0.1vw;
     background-repeat: no-repeat;
 }
 header{
@@ -210,16 +210,23 @@ h1{
 	z-index:5;
 } 
 .mss{
-	height: 50vw;
-	width: 30vw;
-	background-color:red;
+	margin: -2vw 0 -2vw 2vw;
+	height: 33vw;
+    width: 50vw;
+    background-color: red;
 }
 .hidden{
 	display: none;
 }
-.menuh2{
+.hidden1{
+	visibility: hidden;
+}
+.menuh2is{
 	margin-left: 20vw;
-    margin-top: -18vw;
+}
+.menuh2but{
+	margin-left: 20vw;
+    margin-top: -18.5vw;
 }
 .menugal{
 	margin: -2vw 0 -2vw 2vw;
@@ -228,8 +235,11 @@ h1{
     height: 55%;
 }
 .menugal_btn{
-	margin-top: 15vw;
-    margin-left: 20vw;
+    margin-top: 15vw;
+    margin-left: 21.5vw;
+    border: 1.5vw solid #ffffff00;
+    border-right: 3vw solid #CE364C;
+    background-color: white;
 }
 .menutext{
 	display: none;
@@ -238,9 +248,9 @@ h1{
 	transform: skewY(-2.5deg);
     display: flex;
     flex-direction: column;
-    margin-top: -45.5vw;
-    /*height: 75%;*/
-	float: right;
+    margin-top: -39vw;
+    height: 70%;
+    float: right;
     justify-content: space-between;
 }
 .but{
@@ -257,7 +267,8 @@ h1{
     background-image: url(menu1_1.png);
     background-size: 25%;
     background-repeat: no-repeat;
-
+	background-position-y: -0.2vw;
+    background-position-x: -0.8vw;
 }
 .mp{
 	height:1.2vw;
@@ -430,7 +441,6 @@ footer{
     border-radius: 1vw;
     margin-top: -0.5vw;
 }
-
 /* для маленьких экранов*/
 @media screen and (max-width:640px){
 	.p{
@@ -533,12 +543,16 @@ footer{
 		height:140vw;
 		width:100%;
 	} 
+	.m {
+		width: 80%;
+		margin: 0 auto;
+	}
 	.menuh2{
 		margin-left: 0vw;
 		margin-top: -14vw;
 	}
 	.menugal{
-		margin: 0 auto;
+		margin: -5vw auto;
 		width: 60%;
 		background-color: blue;
 		height: 55%;
@@ -551,7 +565,7 @@ footer{
 		width: 60%;
 		font-size: 5vw;
 		text-align: center;
-		margin: 2vw auto;
+		margin: 7vw auto;
 	}
 	.vmeste{
 		height: 140vw;

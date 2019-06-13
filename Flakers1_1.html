@@ -32,7 +32,7 @@
 						<div class="weimg"><!--<image src="#"/>--></div>
 						<div class="wep normal"><p>Мы&nbsp;&mdash; Найнта Обинов и&nbsp;Артем Балаян&nbsp;&mdash; основатели сети кофеен Etlon Coffee.</p></div>
 						<div class="wep small"><p>Мы&nbsp;&mdash; Найнта Обинов и&nbsp;Артем Балаян&nbsp;&mdash; основатели сети кофеен Etlon Coffee, открыли кафе Flakers, в&nbsp;меню которого&nbsp;&mdash; 70&nbsp;марок сухих завтраков со&nbsp;всего света, а&nbsp;также разнообразные топпинги и&nbsp;молоко или йогурт.</p></div>
-						<div class="wep wea normal"><p>Подробнее</p></div>
+						<div class="wep wea normal"><a class="wea" href="#">Подробнее</a></div>
 					</div>
 				</div>
 				<div class ="why normal">
@@ -40,19 +40,25 @@
 						<h2>Почему мы?</h2>
 						<div class="weimg"><!--<image src="#"/>--></div>
 						<div class="wep"><p>В&nbsp;основе меню Flakers- 70&nbsp;марок сухих завтраков со&nbsp;всего света, а&nbsp;также разнообразные топпинги и&nbsp;молоко или йогурт.</p></div>
-						<div class="wep wea"><p>Подробнее</p></div>
+						<div class="wep wea"><a class="wea" href="#">Подробнее</a></div>
 					</div>
 				</div>
 			</div>
 			<div class ="menu">
 			<a name="menu"/>
 				<div class="wrap wrap- m">
-					<button id="menugal_btn" class="menugal_btn">Cl</button>
-					<div class="menuh2">
-						<h2>Меню</h2>
-					</div>
+					<button id="menugal_btn" class="hidden" style="
+						margin-top: 15vw;
+						margin-left: 21.5vw;
+						border: 1.5vw solid #ffffff00;
+						border-right: 3vw solid #CE364C;
+						background-color: white;
+					"></button>
+					<div id ="mh2is" ><h2 class="menuh2is">Меню</h2></div>
+					<div id ="mh2but" class="hidden"><h2  class="menuh2but">Меню</h2></div>
 					<div id ="menugal" class="visible">
-						<div class="menugal"></div>
+						<div class="menugal">
+						</div>
 					</div>
 					<div id ="mss" class="hidden">
 						<div class="mss"></div>
@@ -115,10 +121,6 @@
 								<div class="formalabel"><label for="message">Сообщение</label></div>
 								<textarea id="message" class="field p fieldmes" required name="message" rows="4"></textarea>
 							</div>
-							<!--<div class="field-block field-check">
-								<input id="check" name="check" checked type="checkbox" class="check">
-								<span class="check-text">Я добровольно отправляю свои данные</span>
-							</div>-->
 							<button id="button" class="button p" type="submit"  onclick="BlogGood()">Отправить</button>
 						</form>
 					</div>
@@ -128,7 +130,8 @@
 				<a name="galereia"/>
 				<div class="wrap wrap- p">
 					<h2>Любимые хлопья</h2>
-					<div class="gal"></div>
+					<div class="gal">
+					</div>
 					<div class="galtext normal"><p>&laquo;Чудесное кафе, нам очень понравилось&raquo;</p></div>  
 					<div class="galtext small"><p>&laquo;Уютная, теплая кафешка с&nbsp;интересным дизайном. Есть возможность посидеть на&nbsp;подоконниках. Когда заходишь, сразу видишь стенд с&nbsp;огромным количеством хлопьев из&nbsp;разных стран, глаза разбегаются. Есть возможность собрать самому десерт, а&nbsp;можно выбрать из&nbsp;меню уже собранные. Для тех, кто первый раз, лучше берите уже собранный)&raquo;</p></div>  
 				</div>
@@ -180,6 +183,7 @@
 		
 	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 		<script type="text/javascript">
 
 			var galDiv = document.getElementById('menugal');
@@ -188,6 +192,8 @@
 			var teeDiv = document.getElementById('mtee');
 			var coctDiv = document.getElementById('mcoct');
 			var miceDiv = document.getElementById('mice');
+			var mh2isDiv = document.getElementById('mh2is');
+			var mh2butDiv = document.getElementById('mh2but');
 
 			var galBtn = document.getElementById('menugal_btn');
 			var samBtn = document.getElementById('mss_btn');
@@ -203,6 +209,9 @@
 				coctDiv.setAttribute('class', 'hidden');
 				miceDiv.setAttribute('class', 'hidden');
 				galDiv.setAttribute('class', 'visible');
+				galBtn.setAttribute('class', 'hidden');
+				mh2isDiv.setAttribute('class', 'visible');
+				mh2butDiv.setAttribute('class', 'hidden');
 			};
 
 			samBtn.onclick = function() {
@@ -212,6 +221,9 @@
 				coctDiv.setAttribute('class', 'hidden');
 				miceDiv.setAttribute('class', 'hidden');
 				samDiv.setAttribute('class', 'visible');
+				galBtn.setAttribute('class', 'visible');
+				mh2isDiv.setAttribute('class', 'hidden');
+				mh2butDiv.setAttribute('class', 'visible');
 			};
 
 			fbtBtn.onclick = function() {
@@ -221,6 +233,9 @@
 				coctDiv.setAttribute('class', 'hidden');
 				miceDiv.setAttribute('class', 'hidden');
 				fbtDiv.setAttribute('class', 'visible');
+				galBtn.setAttribute('class', 'visible');
+				mh2isDiv.setAttribute('class', 'hidden');
+				mh2butDiv.setAttribute('class', 'visible');
 			};
 			
 			teeBtn.onclick = function() {
@@ -230,6 +245,9 @@
 				coctDiv.setAttribute('class', 'hidden');
 				miceDiv.setAttribute('class', 'hidden');
 				teeDiv.setAttribute('class', 'visible');
+				galBtn.setAttribute('class', 'visible');
+				mh2isDiv.setAttribute('class', 'hidden');
+				mh2butDiv.setAttribute('class', 'visible');
 			};
 			
 			coctBtn.onclick = function() {
@@ -239,6 +257,9 @@
 				galDiv.setAttribute('class', 'hidden');
 				miceDiv.setAttribute('class', 'hidden');
 				coctDiv.setAttribute('class', 'visible');
+				galBtn.setAttribute('class', 'visible');
+				mh2isDiv.setAttribute('class', 'hidden');
+				mh2butDiv.setAttribute('class', 'visible');
 			};
 			
 			miceBtn.onclick = function() {
@@ -248,6 +269,9 @@
 				coctDiv.setAttribute('class', 'hidden');
 				galDiv.setAttribute('class', 'hidden');
 				miceDiv.setAttribute('class', 'visible');
+				galBtn.setAttribute('class', 'visible');
+				mh2isDiv.setAttribute('class', 'hidden');
+				mh2butDiv.setAttribute('class', 'visible');
 			};
 		</script>
 		<script>
@@ -271,12 +295,6 @@
 		$("#madres").click(function() {
 		   scrollToAnchor('adres');
 		});
-		</script>
-		<script>
-		  function myFunction() {
-			document.getElementById('menugal').style.display = "flex";
-		  }
-		</script>
-		
+		</script>		
 	</body>
 </html>
