@@ -109,9 +109,15 @@ header{
     width: 15vw;
     border-radius: 7.5vw;
     background-color: white;
-	transform: skewY(-5deg);
-	margin-top: -2vw;
+    transform: skewY(-5deg);
+    margin-top: -7vw;
     margin-left: 10vw;
+    font-family: DomIno;
+    font-size: 6vw;
+    color: #f3f0f0;
+    text-align: center;
+    line-height: 15vw;
+    text-transform: uppercase;
 }
 .demo{
 	background-image: url("fon.jpg");
@@ -658,7 +664,13 @@ footer{
     margin-left: 10vw;
     z-index: 30;
     position: relative;
-    margin-top: -14vw;
+    margin-top: -24vw;
+    font-family: DomIno;
+    font-size: 12vw;
+    color: #f3f0f0;
+    text-align: center;
+    line-height: 28vw;
+    text-transform: uppercase;
 }
 .footertext{
 	color: white;
@@ -674,12 +686,41 @@ footer{
     flex-direction: row-reverse;
 }
 .footericon{
-	background-color: red;
+	/*background-color: red;*/
     width: 4vw;
     height: 4vw;
     margin-left: 1vw;
     border-radius: 1vw;
     margin-top: -0.5vw;
+}
+.footericon a{
+	display: block;
+	height: 100%;
+	text-align: center;
+}
+.ic1{
+	background-image: url(images/face.png);
+    background-repeat: no-repeat;
+    background-size: 135%;
+    background-position-x: -0.6vw;
+    background-position-y: -0.6vw;
+}
+.ic2{
+	background-image: url(images/inst.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position-x: -0.25vw;
+    background-position-y: -0.25vw;
+}
+.ic3{
+	background-image: url(images/vk.png);
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+.ic4{
+	background-image: url(images/tw.png);
+	background-repeat: no-repeat;
+	background-size:100%;
 }
 
 .gal{
@@ -881,7 +922,9 @@ a.slide_btn {
 		border-radius: 22.5vw;
 		background-color: white;
 		transform: skewY(-5deg);
-		margin: 5vw auto;
+		margin: -12vw auto;
+		line-height: 45vw;
+		font-size: 18vw;
 	}
 	.demo{
 		background-size: 100%;
@@ -1144,7 +1187,7 @@ a.slide_btn {
 		margin-left: 11vw;
 		z-index: 30;
 		position: relative;
-		margin-top: -8vw;
+		margin-top: -17.5vw;
 	}
 	footer {
 		background-color: #D6414F;
