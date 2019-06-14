@@ -30,7 +30,7 @@
 				<div class ="who">
 					<div class="whowrap">
 						<h2>Кто мы?</h2>
-						<div class="weimg"><!--<image src="#"/>--></div>
+						<div class="weimg whoimg"><!--<image src="images/we.jpg"/>--></div>
 						<div class="wep normal"><p>Мы&nbsp;&mdash; Найнта Обинов и&nbsp;Артем Балаян&nbsp;&mdash; основатели сети кофеен Etlon Coffee.</p></div>
 						<div class="wep small"><p>Мы&nbsp;&mdash; Найнта Обинов и&nbsp;Артем Балаян&nbsp;&mdash; основатели сети кофеен Etlon Coffee, открыли кафе Flakers, в&nbsp;меню которого&nbsp;&mdash; 70&nbsp;марок сухих завтраков со&nbsp;всего света, а&nbsp;также разнообразные топпинги и&nbsp;молоко или йогурт.</p></div>
 						<div class="wep wea normal"><a class="wea" href="#">Подробнее</a></div>
@@ -39,7 +39,7 @@
 				<div class ="why normal">
 					<div class="whywrap">
 						<h2>Почему мы?</h2>
-						<div class="weimg"><!--<image src="#"/>--></div>
+						<div class="weimg whyimg"><!--<image src="#"/>--></div>
 						<div class="wep"><p>В&nbsp;основе меню Flakers- 70&nbsp;марок сухих завтраков со&nbsp;всего света, а&nbsp;также разнообразные топпинги и&nbsp;молоко или йогурт.</p></div>
 						<div class="wep wea"><a class="wea" href="#">Подробнее</a></div>
 					</div>
@@ -47,20 +47,23 @@
 			</div>
 			<div class ="menu">
 			<a name="menu"/>
-				<div class="wrap wrap- m">
+				<div class="wrap wrap- m p">
 					<button id="menugal_btn" class="menugal_btn"></button>
 					<div id ="mh2is" class="menuh2is"><h2>Меню</h2></div>
 					<div id ="menugal" class="visible">
 					<div class="menugal">
 						<div class="slider">
-							<input type="radio" id="btn-1" name="toggle" checked>
-							<input type="radio" id="btn-2" name="toggle">
-							<input type="radio" id="btn-3" name="toggle">
+							<input type="radio" class="hidden" id="btn-1" name="toggle" checked>
+							<input type="radio" class="hidden" id="btn-2" name="toggle">
+							<input type="radio" class="hidden" id="btn-3" name="toggle">
 							<div class="slider-inner">
 								<div class="slider-slides">
-									<img src="#">
-									<img src="#">
-									<img src="#">
+									<img class="normal" src="images/a1_1.jpg">
+									<img class="small" src="images/a1_2.jpg">
+									<img class="normal" src="images/a2_1.jpg">
+									<img class="small" src="images/a2_2.jpg">
+									<img class="normal" src="images/a3_1.jpg">
+									<img class="small" src="images/a3_2.jpg">
 								</div>     
 							</div>
 							<div class="slider-controls">
@@ -73,19 +76,256 @@
 						</div>
 					</div>
 					<div id ="mss" class="hidden">
-						<div class="mss"></div>
+						<div class="mw">
+							<div class="mss">
+								<div class="flakes">
+									<div class="gl p"><p>хлопья</p></div>
+									<div class="dop p">
+										<p>Nesquik</p>
+										<p>Frosties</p>
+										<p>Oreo o’s</p>
+										<p>Cheerios</p>
+										<p>Cinnamon</p>
+										<p>Corn pops</p>
+										<p>Apple jacks</p>
+										<p>Cookie crisp</p>
+										<p>Сorn flakes</p>
+										<p>Rice Krispies</p>
+										<p>Vanilla Chex</p>
+										<p>Lucky charms</p>
+										<p>Despicable me</p>
+										<p>Cap ’n&nbsp;crunch</p>
+										<p>Cocoa krispies</p>
+										<p>Honey cheerios</p>
+										<p>Shreddies coco</p>
+										<p>Kellogg’s&nbsp;all bran</p>
+									</div>
+								</div>
+								<div class="milk">
+									<div class="gl p"><p>молоко</p></div>
+									<div class="dop p">
+										<p>йогурт</p>
+										<p>сливки</p>
+										<p>соевое</p>
+										<p>цельное</p>
+										<p><nobr>Раф-кофе</nobr></p>
+										<p>ванильное</p>
+										<p>тонированное</p>
+										<p>обезжиренное</p>
+									</div>
+								</div>
+								<div class="topping">
+									<div class="gl p"><p>топпинг</p></div>
+									<div class="dop p">
+										<p>twix</p>
+										<p>мята</p>
+										<p>киви</p>
+										<p>m&m’s</p>
+										<p>манго</p>
+										<p>сироп</p>
+										<p>kinder</p>
+										<p>фундук</p>
+										<p>имбирь</p>
+										<p>черника</p>
+										<p>ежевика</p>
+										<p>malteser</p>
+										<p>клубника</p>
+										<p>маршмеллоу</p>
+										<p>печенье oreo</p>
+										<p>печенье belvita</p>
+										<p>арахисовая паста</p>
+										<p>мармелад harribo</p>
+										<p>клубничный донат</p>
+										<p>кокосовая стружка</p>
+										<p>rainbow ranskalaiset</p>
+										<p>посыпка кондитерская</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div id ="mfbt" class="hidden">
-						<div class="mss"></div>
+						<div class="mw">
+							<div class="dop stoim p"><p>Стоимость указана в&nbsp;рублях</p></div>
+							<div class="mfb_wrap">
+								<div class="imgmen1"></div>
+								<div class="p osn">
+									
+									<p class="name">Классик</p>
+									<p class="name">Шоколадный монстр</p>
+									<p class="name">Ореховый бум</p>
+									<p class="name">Шоколадная долина</p>
+									<p class="name">Дикий голод</p>
+									<p class="name">Каша и&nbsp;три медведя</p>
+									<p class="name">Холодное сердце</p>
+									<p class="name">Завтрак принцессы</p>
+									<p class="name">Вкус жизни</p>
+									<p class="name">Black Star</p>
+									<p class="name">Мятные войны</p>
+									<p class="name"><nobr>Клубника-банан</nobr></p>									
+									<p class="name">Спайси манго</p>
+									<p class="name">Офрутеть</p>									
+									<p class="name">Яна диетти</p>
+									<p class="name"><nobr>Ежевика-мята</nobr></p>
+									<p class="name">Фирменные</p>
+									<p class="name">Остров сокровищ</p>
+								</div>
+								<div class="p osn cost">
+									<p>190</p>
+									<p>250</p>
+									<p>290</p>
+									<p>290</p>
+									<p>290</p>
+									<p>290</p>
+									<p>330</p>
+									<p>330</p>
+									<p>330</p>
+									<p>330</p>
+									<p>330</p>
+									<p>350</p>
+									<p>360</p>
+									<p>370</p>
+									<p>370</p>
+									<p>370</p>
+									<p>370</p>
+									<p>380</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div id ="mtee" class="hidden">
-						<div class="mss"></div>
+						<div class="mw">
+							<div class="dop stoim p"><p>Стоимость указана в&nbsp;рублях</p></div>
+							<div class="mtee_wrap">
+								<div class="coffe p osn">
+									<div class="p pmt">
+										<p>кофе</p>
+										<div class="p osn cof_n">
+											<p>Эспрессо</p>
+											<p>Американо</p>
+											<p>Капучино</p>
+											<p>Латте</p>
+											<p>раф</p>
+											<p>какао</p>
+											<p>горячий шоколад</p>
+										</div>
+									</div>
+									<div class="p osn cost cof_c">
+										<p>80/130</p>
+										<p class="dopinf">30&nbsp;мл/60&nbsp;мл</p>
+										<p>80/130</p>
+										<p class="dopinf">150&nbsp;мл/300&nbsp;мл</p>
+										<p>110/140/170</p>
+										<p class="dopinf">200&nbsp;мл/300&nbsp;мл/400&nbsp;мл</p>
+										<p>110/140/170</p>
+										<p class="dopinf">200&nbsp;мл/300&nbsp;мл/400&nbsp;мл</p>
+										<p>130/160/190</p>
+										<p class="dopinf">200&nbsp;мл/300&nbsp;мл/400&nbsp;мл</p>
+										<p>110/140/170</p>
+										<p class="dopinf">200&nbsp;мл/300&nbsp;мл/400&nbsp;мл</p>
+										<p>130/160/190</p>
+										<p class="dopinf">200&nbsp;мл/300&nbsp;мл/400&nbsp;мл</p>
+									</div>
+								</div>
+								<div class="tee p osn">
+									<div class="p pmt"><p>ЧАЙ</p>
+										<div class="p osn tee_n">
+											<p>ЧАЙ</p>
+											<div class="teedop">
+												<p>черный</p>
+												<p>черный с&nbsp;бергамотом</p>
+												<p>зеленый</p>
+												<p>зеленый с&nbsp;жасмином</p>
+												<p>клубничный шик</p>
+												<p>молочный улун</p>
+											</div>
+											<p>облепиховый чай</p>
+											<p>Чай Клюквенный с&nbsp;апельсином</p>
+											<p>Чай с&nbsp;черной смородиной и&nbsp;мятой</p>
+											<p>Имбирный чай с&nbsp;лимоном</p>
+										</div>
+									</div>
+									<div class="p osn cost tee_c">
+										<p>100</p>
+										<p class="dopinf">400&nbsp;мл</p>
+										<div class="tee2dop"><p>170/350</p>
+										<p class="dopinf">350&nbsp;мл/1л</p></div>
+										<div class="tee2"><p>170/350</p>
+										<p class="dopinf">350&nbsp;мл/1л</p></div>
+										<div class="tee2"><p>170/350</p>
+										<p class="dopinf">350&nbsp;мл/1л</p></div>
+										<div class="tee2"><p>170/350</p>
+										<p class="dopinf">350&nbsp;мл/1л</p></div>
+									</div>
+								</div>
+							</div>
+							<div class="dop stoim p doptee">
+								<div><p>Сироп/молоко/сливки/взбитые сливки/маршмеллоу/топпинг</p></div>
+								<div><p>20</p></div>
+							</div>
+							<div class="dop stoim p doptee">
+									<div><p>соевое молоко</p></div>
+									<div><p>70</p></div>
+							</div>							
+						</div>
 					</div>
 					<div id ="mcoct" class="hidden">
-						<div class="mss"></div>
+						<div class="mw">
+							<div class="dop stoim p"><p>Стоимость указана в&nbsp;рублях</p></div>
+							<div class="mfb_wrap">
+								<div class="p osn coctn">
+									<p class="name">ванильный</p>
+									<p class="name">банановый</p>
+									<p class="name">ягодный</p>
+									<p class="name">овсяный</p>
+									<p class="name">Kitkat</p>
+									<p class="name">kinder</p>
+									<p class="name">oreo</p>
+								</div>
+								<div class="p osn cost coctс">
+									<p>190</p>
+									<p class="dopinf">400&nbsp;мл</p>
+									<p>250</p>
+									<p class="dopinf">400&nbsp;мл</p>
+									<p>250</p>
+									<p class="dopinf">400&nbsp;мл</p>
+									<p>250</p>
+									<p class="dopinf">400&nbsp;мл</p>
+									<p>250</p>
+									<p class="dopinf">400&nbsp;мл</p>
+									<p>250</p>
+									<p class="dopinf">400&nbsp;мл</p>
+									<p>250</p>
+									<p class="dopinf">400&nbsp;мл</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div id ="mice" class="hidden">
-						<div class="mss"></div>
+						<div class="mw">
+							<div class="dop stoim p"><p>Стоимость указана в&nbsp;рублях</p></div>
+							<div class="mice_wrap">
+								<div class="p osn ice">
+									<p class="name">ванильное</p>
+									<p class="name">шоколадное с&nbsp;шоколадной крошкой</p>
+									<p class="name">парлине с&nbsp;мягкой карамелью и&nbsp;орехом пекан</p>
+									<p class="name">апельсиновое с&nbsp;шоколадом</p>
+									<p class="name">сырное с&nbsp;горгонзолой</p>
+								</div>
+								<div class="icewrap">
+									<div class="p osn">
+										<p>1 шарик</p>
+										<p>2 шарика</p>
+										<p>3 шарика</p>
+									</div>
+									<div class="p osn">
+										<p>70</p>
+										<p>130</p>
+										<p>180</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="menutext p small"><a href="9.pdf" download="">Скачать меню</a></div>
 				</div>
@@ -132,6 +372,7 @@
 							<div class="field-block">
 								<div class="formalabel"><label for="message">Сообщение</label></div>
 								<textarea id="message" class="field p fieldmes" required name="message" rows="4"></textarea>
+								<div class="arrow"></div>
 							</div>
 							<button id="button" class="button p" type="submit"  onclick="BlogGood()">Отправить</button>
 						</form>
@@ -147,12 +388,20 @@
 							  <div class="slide_viewer">
 								<div class="slide_group">
 								  <div class="slide">
+									<div class="img i1"></div>
+									<div class="com"><p>&laquo;Чудесное кафе, нам очень понравилось&raquo;</p></div>
 								  </div>
 								  <div class="slide">
+									<div class="img i2"></div>
+									<div class="com"><p>&laquo;Отличное и&nbsp;уютное место Очень большой выбор вкусняшек для сладкоежек&raquo;</p></div>
 								  </div>
 								  <div class="slide">
+									<div class="img i3"><</div>
+									<div class="com"><p>&laquo;Потрясающие наборы хлопьев, вкусный кофе- все, что нужно!&raquo;</p></div>
 								  </div>
 								  <div class="slide">
+									 <div class="img i4"></div>
+									<div class="com"><p>&laquo;Уютная, теплая кафешка с&nbsp;интересным дизайном. Есть возможность посидеть на&nbsp;подоконниках. Когда заходишь, сразу видишь стенд с&nbsp;огромным количеством хлопьев из&nbsp;разных стран, глаза разбегаются. Есть возможность собрать самому десерт, а&nbsp;можно выбрать из&nbsp;меню уже собранные. Для тех, кто первый раз, лучше берите уже собранный)&raquo;</p></div>
 								  </div>
 								</div>
 							  </div>
@@ -164,30 +413,11 @@
 
 							<div class="directional_nav">
 							  <div class="previous_btn" title="Previous">
-								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3vw" height="3vw" viewBox="-11 -11.5 65 66">
-								  <g>
-									<g>
-									  <path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
-										c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
-									  <path fill="#474544" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0	c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564	c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
-									</g>
-								  </g>
-								</svg>
 							  </div>
 							  <div class="next_btn" title="Next">
-								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3vw" height="3vw" viewBox="-11 -11.5 65 66">
-								  <g>
-									<g>
-									  <path fill="#474544" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5	c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288	c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
-									  <path fill="#474544" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 			L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
-									</g>
-								  </g>
-								</svg>
 							  </div>
 							</div>
 						</div>
-					<div class="galtext normal"><p>&laquo;Чудесное кафе, нам очень понравилось&raquo;</p></div>  
-					<div class="galtext small"><p>&laquo;Уютная, теплая кафешка с&nbsp;интересным дизайном. Есть возможность посидеть на&nbsp;подоконниках. Когда заходишь, сразу видишь стенд с&nbsp;огромным количеством хлопьев из&nbsp;разных стран, глаза разбегаются. Есть возможность собрать самому десерт, а&nbsp;можно выбрать из&nbsp;меню уже собранные. Для тех, кто первый раз, лучше берите уже собранный)&raquo;</p></div>  
 				</div>
 			</div>
 			<div class ="adres">
@@ -366,6 +596,7 @@
 				miceDiv.setAttribute('class', 'hidden');
 				samDiv.setAttribute('class', 'visible');
 				galBtn.setAttribute('style', 'opacity:1');
+				samDiv.setAttribute('style', 'opacity:1');
 			};
 
 			fbtBtn.onclick = function() {
@@ -429,6 +660,13 @@
 		$("#madres").click(function() {
 		   scrollToAnchor('adres');
 		});
-		</script>		
+		</script>	
+
+		<script type="text/javascript">
+			function BlogGood()
+			{
+			location.href='#vmesteh2';
+			}
+		</script>
 	</body>
 </html>
